@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import PivotTableUI from 'react-pivottable/PivotTableUI';
-import 'react-pivottable/pivottable.css';
-import TableRenderers from 'react-pivottable/TableRenderers';
+import PivotTableUI from '../tz-react-pivottable/PivotTableUI';
+import '../tz-react-pivottable/pivottable.css';
+import TableRenderers from '../tz-react-pivottable/TableRenderers';
 import Plot from 'react-plotly.js';
-import createPlotlyRenderers from 'react-pivottable/PlotlyRenderers';
+import createPlotlyRenderers from '../tz-react-pivottable/PlotlyRenderers';
 
 // create Plotly renderers via dependency injection
 const PlotlyRenderers = createPlotlyRenderers(Plot);
