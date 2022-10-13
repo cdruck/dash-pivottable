@@ -15,7 +15,7 @@ hiddenFromAggregators=NULL, hiddenFromDragDrop=NULL,
 menuLimit=NULL, unusedOrientationCutoff=NULL, cols=NULL,
 colOrder=NULL, rows=NULL, rowOrder=NULL,
 aggregatorName=NULL, vals=NULL, valueFilter=NULL,
-rendererName=NULL)
+rendererName=NULL, aggregators=NULL)
 }
 
 \arguments{
@@ -52,10 +52,12 @@ orders by row total}
 
 \item{vals}{Unnamed list. Vals for the aggregator.}
 
-\item{valueFilter}{Named list. Value filter for each attibute name.}
+\item{valueFilter}{Named list. Value filter for each attribute name.}
 
 \item{rendererName}{Character. Which renderer is currently selected. E.g. Table, Line Chart, Scatter
 Chart, etc.}
+
+\item{aggregators}{Unnamed list. Optional list of aggregators}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

@@ -5,6 +5,7 @@ import '../tz-react-pivottable/pivottable.css';
 import TableRenderers from '../tz-react-pivottable/TableRenderers';
 import Plot from 'react-plotly.js';
 import createPlotlyRenderers from '../tz-react-pivottable/PlotlyRenderers';
+import { aggregators } from '../tz-react-pivottable/Utilities';
 
 // create Plotly renderers via dependency injection
 const PlotlyRenderers = createPlotlyRenderers(Plot);
@@ -70,7 +71,8 @@ export default class PivotTable extends Component {
             hiddenFromAggregators,
             hiddenFromDragDrop,
             menuLimit,
-            unusedOrientationCutoff
+            unusedOrientationCutoff,
+            aggregators
         } = this.props;
 
         return (
@@ -83,6 +85,7 @@ export default class PivotTable extends Component {
                 hiddenFromDragDrop={hiddenFromDragDrop}
                 menuLimit={menuLimit}
                 unusedOrientationCutoff={unusedOrientationCutoff}
+                aggregators={aggregators}
                 {...this.state}
             />
         );
@@ -94,7 +97,8 @@ PivotTable.defaultProps = {
     unusedOrientationCutoff: 85,
     hiddenAttributes: [],
     hiddenFromAggregators: [],
-    hiddenFromDragDrop: []
+    hiddenFromDragDrop: [],
+    aggregators: aggregators
 };
 
 PivotTable.propTypes = {
@@ -181,7 +185,7 @@ PivotTable.propTypes = {
     vals: PropTypes.array,
 
     /**
-     * Value filter for each attibute name.
+     * Value filter for each attribute name.
      */
     valueFilter: PropTypes.object,
 
@@ -189,5 +193,10 @@ PivotTable.propTypes = {
      * Which renderer is currently selected. E.g. Table, Line Chart, Scatter
      * Chart, etc.
      */
-    rendererName: PropTypes.string
+    rendererName: PropTypes.string,
+
+    /**
+     * Optional list of aggregators
+     */
+    aggregators: PropTypes.array,
 };

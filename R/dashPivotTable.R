@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-dashPivotTable <- function(id=NULL, data=NULL, hiddenAttributes=NULL, hiddenFromAggregators=NULL, hiddenFromDragDrop=NULL, menuLimit=NULL, unusedOrientationCutoff=NULL, cols=NULL, colOrder=NULL, rows=NULL, rowOrder=NULL, aggregatorName=NULL, vals=NULL, valueFilter=NULL, rendererName=NULL) {
+dashPivotTable <- function(id=NULL, data=NULL, hiddenAttributes=NULL, hiddenFromAggregators=NULL, hiddenFromDragDrop=NULL, menuLimit=NULL, unusedOrientationCutoff=NULL, cols=NULL, colOrder=NULL, rows=NULL, rowOrder=NULL, aggregatorName=NULL, vals=NULL, valueFilter=NULL, rendererName=NULL, aggregators=NULL) {
     
-    props <- list(id=id, data=data, hiddenAttributes=hiddenAttributes, hiddenFromAggregators=hiddenFromAggregators, hiddenFromDragDrop=hiddenFromDragDrop, menuLimit=menuLimit, unusedOrientationCutoff=unusedOrientationCutoff, cols=cols, colOrder=colOrder, rows=rows, rowOrder=rowOrder, aggregatorName=aggregatorName, vals=vals, valueFilter=valueFilter, rendererName=rendererName)
+    props <- list(id=id, data=data, hiddenAttributes=hiddenAttributes, hiddenFromAggregators=hiddenFromAggregators, hiddenFromDragDrop=hiddenFromDragDrop, menuLimit=menuLimit, unusedOrientationCutoff=unusedOrientationCutoff, cols=cols, colOrder=colOrder, rows=rows, rowOrder=rowOrder, aggregatorName=aggregatorName, vals=vals, valueFilter=valueFilter, rendererName=rendererName, aggregators=aggregators)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ dashPivotTable <- function(id=NULL, data=NULL, hiddenAttributes=NULL, hiddenFrom
         props = props,
         type = 'PivotTable',
         namespace = 'dash_pivottable',
-        propNames = c('id', 'data', 'hiddenAttributes', 'hiddenFromAggregators', 'hiddenFromDragDrop', 'menuLimit', 'unusedOrientationCutoff', 'cols', 'colOrder', 'rows', 'rowOrder', 'aggregatorName', 'vals', 'valueFilter', 'rendererName'),
+        propNames = c('id', 'data', 'hiddenAttributes', 'hiddenFromAggregators', 'hiddenFromDragDrop', 'menuLimit', 'unusedOrientationCutoff', 'cols', 'colOrder', 'rows', 'rowOrder', 'aggregatorName', 'vals', 'valueFilter', 'rendererName', 'aggregators'),
         package = 'dashPivottable'
         )
 

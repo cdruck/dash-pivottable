@@ -140,7 +140,7 @@
           "name": "object"
         },
         "required": false,
-        "description": "Value filter for each attibute name."
+        "description": "Value filter for each attribute name."
       },
       "rendererName": {
         "type": {
@@ -148,6 +148,17 @@
         },
         "required": false,
         "description": "Which renderer is currently selected. E.g. Table, Line Chart, Scatter\nChart, etc."
+      },
+      "aggregators": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Optional list of aggregators",
+        "defaultValue": {
+          "value": "aggregators",
+          "computed": true
+        }
       }
     }
   }
