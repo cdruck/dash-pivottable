@@ -330,7 +330,16 @@ var PivotTableUI = function (_React$PureComponent2) {
   function PivotTableUI(props) {
     _classCallCheck(this, PivotTableUI);
 
+    // if aggregators are passed as strings, match them with those defined in ./Utilities/aggregators
     var _this5 = _possibleConstructorReturn(this, (PivotTableUI.__proto__ || Object.getPrototypeOf(PivotTableUI)).call(this, props));
+
+    var aggs = {};
+    if (!!props.aggregators) {
+      for (agg in props.aggregators) {
+        aggs[agg] = _Utilities.aggregators[agg];
+      }
+      props.aggregators = aggs;
+    }
 
     _this5.state = {
       unusedOrder: [],
