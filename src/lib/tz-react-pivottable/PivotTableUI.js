@@ -340,6 +340,7 @@ var PivotTableUI = function (_React$PureComponent2) {
       }
       props.aggregators = aggs;
     }
+    console.log(props);
 
     _this5.state = {
       unusedOrder: [],
