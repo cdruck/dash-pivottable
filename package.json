@@ -4,12 +4,12 @@
   "description": "Implementation of react-pivottable in Dash (Python)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/plotly/dash-pivottable.git"
+    "url": "git://github.com/cdruck/dash-pivottable.git"
   },
   "bugs": {
-    "url": "https://github.com/plotly/dash-pivottable/issues"
+    "url": "https://github.com/cdruck/dash-pivottable/issues"
   },
-  "homepage": "https://github.com/plotly/dash-pivottable",
+  "homepage": "https://github.com/cdruck/dash-pivottable",
   "main": "build/index.js",
   "scripts": {
     "start": "webpack-serve ./webpack.serve.config.js --open",
@@ -27,7 +27,7 @@
   "dependencies": {
     "plotly.js": "^1.54.7",
     "ramda": "^0.25.0",
-    "react-pivottable": "^0.10.0",
+    "react-pivottable": "git+https://github.com/cdruck/dash-pivottable.git",
     "react-plotly.js": "^2.3.0"
   },
   "devDependencies": {
