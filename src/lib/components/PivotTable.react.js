@@ -11,7 +11,7 @@ import { aggregators } from 'react-pivottable/Utilities';
 const PlotlyRenderers = createPlotlyRenderers(Plot);
 
 /**
-* Pivot tables are useful for interactive presentation of  
+* Pivot tables are useful for interactive presentation oigf
 * summary statistics computed for data contained in another table.
 *
 * This function provides a convenient Dash interface 
